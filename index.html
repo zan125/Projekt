@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Rozha+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+
+	<title>Weather App</title>
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button  type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+			        <span class="sr-only" >Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+				<span class="navbar-brand"> Logo </span>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-nav-demo" >
+				<ul class="nav navbar-nav" class="butn">
+					<li class="active"><a href="#"><b>Kaj obleči</b></a></li>
+					<li><a href="#" class="linki">Dogodki<hr></a></li>
+					<li><a href="#" class="linki">Profil<hr></a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+
+					<div class="btn-group btn-group-sm" role="group" <!--aria-label="..."--> >
+					  	<button type="button" class="btn btn-default slo">SLO</button>
+					  	<button type="button" class="btn btn-default ang">ENG</button>
+					</div>
+
+					<li><a id="prijava" class="linki" href="#">Prijava<hr></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="main">
+
+		<p id="naslov" >Wearther</p>
+
+		<div id="animacija" class="tretjina">
+			<div id="pravokotnik" class="elem" >človek z oblačili<img src="https://pre00.deviantart.net/2868/th/pre/f/2015/180/0/1/tfa_optimus_human_error_by_kaitlinexe-d8z8e2v.png" style="height: 450px; width: 350px;"></div>
+		</div>
+
+		<div id="podatki" class="tretjina">
+			<ul class="nav nav-pills" id="stopinje">
+			  <li role="presentation" class="active pills"><a href="#"><p> &#8451;</p></a></li>
+			  <li role="presentation" class="pills"><a href="#"><p>&#8457;</p></a></li>
+			</ul>
+			<div id="izpisStopinj">stopinje</div>
+			<div id="kvadrat" class="elem">animacija <img src="https://spaceplace.nasa.gov/templates/featured/sun/sunburn300.png"></div>
+		</div>
+
+		
+		<div class="tretjina">
+			<p>lokacija</p>
+			<div id="zemljevid">google maps <img src="http://www.telegraph.co.uk/content/dam/news/2016/11/27/dump-tower-twitter_trans_NvBQzQNjv4BqeY8zn44CJx5co60z9sMGTUWjmulo7wva9c-kqRbE-Zc.jpg?imwidth=450"  style="width:350px; height: 300px;"></div>
+		</div>
+
+	</div>
+
+	<p style="text-align: center; font-weight: 700;" class="temperature">Temperature danes:</p>
+
+	<div class="container">
+	  <div class="row">
+	    <div class="col-lg-1"><span class="ura">00:00</span><div class="liki">20 &#8451; </div></div>
+	    <div class="col-lg-1"><span class="ura">02:00</span><div class="liki">20 &#8451; </div></div>
+	    <div class="col-lg-1"><span class="ura">04:00</span><div class="liki">20 &#8451; </div></div>
+	    <div class="col-lg-1"><span class="ura">06:00</span><div class="liki">20 &#8451; </div></div>
+	    <div class="col-lg-1"><span class="ura">08:00</span><div class="liki">20 &#8451; </div></div>
+	    <div class="col-lg-1"><span class="ura">10:00</span><div class="liki">20 &#8451; </div></div>
+	    <div class="col-lg-1"><span class="ura">12:00</span><div class="liki">20 &#8451; </div></div>
+	    <div class="col-lg-1"><span class="ura">14:00</span><div class="liki">20 &#8451; </div></div>
+	    <div class="col-lg-1"><span class="ura">16:00</span><div class="liki">20 &#8451; </div></div>
+	    <div class="col-lg-1"><span class="ura">18:00</span><div class="liki">20 &#8451; </div></div>
+	    <div class="col-lg-1"><span class="ura">20:00</span><div class="liki">20 &#8451; </div></div>
+	    <div class="col-lg-1"><span class="ura">22:00</span><div class="liki">20 &#8451; </div></div>
+	  </div>
+	</div>
+
+	<p style="height: 30px;"></p>
+
+	<p style="text-align: center; font-weight:700;" class="temperature">Temperature v naslednjih štirih dneh:</p>
+
+	<div class="container">
+	  <div class="row">
+	    <div class="col-lg-3"><span class="dan">Jutri</span><div class="dnevi">20 &#8451; <hr class="horizontal" /> 20 &#8451;</div></div>
+	    <div class="col-lg-3"><span class="dan">Čez 2 dni</span><div class="dnevi">20 &#8451; <hr class="horizontal" /> 20 &#8451;</div></div>
+	    <div class="col-lg-3"><span class="dan">Čez 3 dni</span><div class="dnevi">20 &#8451; <hr class="horizontal" /> 20 &#8451;</div></div>
+	    <div class="col-lg-3"><span class="dan">Čez 4 dni</span><div class="dnevi">20 &#8451; <hr class="horizontal" /> 20 &#8451;</div></div>
+	  </div>
+	</div>
+
+	<p style="height: 30px;"></p>
+
+	<a href="#"><img src="Resources/mestoSlo.jpg" style="width: 100%; "></a>
+
+	<p style="height: 20px;"></p>
+
+	<div id="footer">
+		<p id="ekipa">RPS Musketeers</p>
+		<p id="clani">Zoran Altiparmakov, Tomaž Kotnjek, Leon Bajal, Žan-Mišel Jerman</p>
+	</div>
+
+<script type="text/javascript" 
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
